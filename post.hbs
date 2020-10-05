@@ -1,0 +1,39 @@
+{{!< default}}
+
+{{#post}}
+
+<main>
+    <article class="{{post_class}}" {{#unless feature_image}}no-image{{/unless}}>
+        {{#if feature_image}}
+        <div class="post_hero_section" style="background-image: url('{{img_url feature_image}}')" alt="{{title}}')">
+            <h1 class="h1-post">{{title}}</h1>
+        </div>
+        {{/if}}
+        
+        
+        <section class="section_post_content">
+            <div class="post_content">
+                <div class="post_tag_container">
+                    {{#primary_author}}
+                    <div class="author-post-container">
+                        
+                        <img class="author-profile-img" src="{{profile_image}}">
+                        <p>{{name}}</p>
+
+                    </div>
+                    
+                    {{/primary_author}}
+
+                    <time datetime="{{date format="DD-MM-YYYY"}}">
+                        {{date format="D MMMM YYYY"}}
+                    </time>
+                    </div>
+                {{content}}
+            </div>
+            
+        </section>
+    
+    </article>
+</main>
+
+{{/post}}

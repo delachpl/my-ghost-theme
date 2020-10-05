@@ -1,0 +1,26 @@
+{{!< default}}
+
+    <header>
+
+            <div class="hero-archive-container">
+                <div class="hero-archive">
+                
+                <h1 class="h1-home-hero">👋 Hey c’est Guilhem. <br>Voici quelques uns de mes articles et essais.</h1>
+                <img class="img-home" src="assets/images/IMG_4319-Modifier.jpg">    
+
+            </div>
+        </div>
+        
+    </header>
+
+    <main class="index-layout">
+        <div class="article-layout">
+            {{#foreach posts}}
+
+                {{> "post-card"}}
+            
+            {{/foreach}}
+        </div>
+        
+    </main>
+            

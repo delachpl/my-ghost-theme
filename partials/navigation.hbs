@@ -1,0 +1,19 @@
+<nav class="nav-global">
+    <div class="nav-left-container">
+        <a href="{{@site.url}}">
+            <img class="nav-logo-link" src="{{@site.logo}}" alt="{{@site.title}}" class="site-logo">
+        </a>
+    </div>
+    <div class="nav-right-container">
+        {{#if @site.navigation}}
+            
+        
+                {{#foreach navigation}}
+                <p><a class="nav-item" href="{{url absolute="true"}}">{{label}}</a></p>
+                {{/foreach}}
+        
+            </ul>
+        {{/if}}
+    </div>
+    
+</nav>
