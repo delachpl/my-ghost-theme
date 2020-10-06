@@ -233,6 +233,10 @@ button:hover {
   margin: 5em -50vw;
 }
 
+.kg-image {
+  width: 100%;
+}
+
 @media (max-width: 1024px) {
   .kg-width-wide {
     width: 100vw;
