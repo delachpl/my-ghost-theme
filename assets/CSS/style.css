@@ -132,6 +132,7 @@ button:hover {
   align-items: center;
   justify-content: center;
   background-size: cover;
+  background-position: center;
   margin: 0px;
 }
 
@@ -312,6 +313,12 @@ button:hover {
 .kg-bookmark-card {
   width: 100%;
   position: relative;
+}
+
+@media (max-width: 500px) {
+  .kg-bookmark-card {
+    width: 80%
+  }
 }
 
 .kg-bookmark-container {

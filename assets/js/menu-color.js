@@ -1,0 +1,1 @@
+document.getElementsByClassName("nav-item").style.color = "white";
