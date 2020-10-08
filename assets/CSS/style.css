@@ -11,7 +11,7 @@
   --violet: #8855FC;
   --white-background: white;
   --gris-clair: #848484;
-
+  --black-contrast-darkmode: #202020;
 }
 
 html, body {
@@ -21,11 +21,11 @@ html, body {
   vertical-align: baseline;
   font-family: var(--font-family-sans, --font-family-serif);
   font-size: 1em;
-  line-height: 2;
   color: var(--noir-grisé);
   position: relative;
   background-color: var(--blanc-cassé);
 }
+
 
 main {
   width: 100vw;
@@ -33,7 +33,6 @@ main {
 
 .site-logo {
   height: 30px;
-  max-width: 150px;
 }
 
 /* 1.1 CSS Global fonts */
@@ -59,6 +58,7 @@ ul {
 
 li {
   margin-bottom: 1.2em;
+  line-height: 2;
 }
 
 h1,
@@ -124,8 +124,16 @@ button:hover {
 
 /* 2. Post CSS */
 
-.post_hero_section {
+.post-layout {
   width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.post_hero_section {
+  width: 85%;
   height: 80vh;
   display: flex;
   flex-direction: column;
@@ -134,6 +142,8 @@ button:hover {
   background-size: cover;
   background-position: center;
   margin: 0px;
+  box-shadow: 10px 10px 20px 3px rgba(0, 0, 0, 0.15);
+  border-radius: 5px;
 }
 
 .h1-post {
@@ -149,7 +159,7 @@ button:hover {
 }
 
 .section_post_content {
-  max-width: 100vw;
+  max-width: 100%;
   margin: auto;
   display: flex;
   flex-direction: column;
@@ -416,12 +426,12 @@ blockquote {
 /* 3 Navigation */
 
 nav {
-  position: absolute;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   width: 100vw;
   height: 13vh;
+  fill: var(--violet);
 }
 
 .nav-left-container {
@@ -445,18 +455,61 @@ nav {
 }
 
 .nav-item {
-  color: var(--noir-profond);
   font-family: var(--font-family-serif);
   font-weight: 600;
   text-transform: uppercase;
   letter-spacing: 0.2rem;
+  line-height: 0;
+  margin: 0px;
 }
 
-@media (max-width: 1000px) {
-  nav {
-    position: static;
-    background-color: var(--blanc-cassé);
-  }
+.nav-item a {
+  color: var(--noir-profond);
+}
+
+.nav-center-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.toggle-dark-mode {
+  position: relative;
+  width: 35px;
+  height: 21px;
+  border-radius: 50px;
+  background-color: var(--blanc-cassé);
+  border: 0.5px solid var(--gris-clair);
+}
+
+.icon-dark-mode-container {
+  position: absolute;
+  width: 37px;
+  height: 37px;
+  left: -50%;
+  top: -40%;
+  border-style: solid;
+  border-width: 0.7px;
+  background-color: var(--blanc-cassé);
+  border-radius: 100%;
+  border-color: var(--gris-clair);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+#_002-sun {
+  width: 70%;
+  height: auto;
+}
+
+.cls-1 {
+  isolation:isolate;
+}
+
+.cls-2 {
+  fill: var(--noir-profond);
 }
 
 /* 4 Archive-home */
@@ -653,4 +706,48 @@ nav {
   .footer-social-network-container a {
     flex-direction: column;
   }
+}
+
+/* Dark mode */
+
+.dark-mode {
+  --blanc-cassé: #151515;
+  --noir-profond: #FCFCFC;
+}
+
+.dark-mode .toggle-dark-mode {
+  background-color: var(--violet);
+  border: 0px;
+}
+
+.dark-mode .h1-post {
+  --blanc-cassé: #FCFCFC;
+}
+
+.dark-mode .icon-dark-mode-container {
+  left: unset;
+  right: -50%;
+  top: -40%;
+}
+
+.dark-mode .kg-bookmark-card {
+  color: var(--gris-clair);
+}
+
+.dark-mode, 
+p, 
+ul, 
+li {
+  color: var(--gris-clair);
+}
+
+.dark-mode 
+.kg-bookmark-card,
+.footer-container {
+  background-color: var(--black-contrast-darkmode);
+}
+
+.dark-mode button {
+  background-color: var(--gris-clair);
+  color: var(--black-contrast-darkmode);
 }
