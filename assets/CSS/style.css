@@ -158,6 +158,8 @@ button:hover {
   }
 }
 
+
+
 .section_post_content {
   max-width: 100%;
   margin: auto;
@@ -167,6 +169,14 @@ button:hover {
   align-self: center;
   position: relative;
   background-image: linear-gradient(rgba(0, 0, 0, 0.3));
+}
+
+.section_post_content h2 {
+  margin: 3rem 0 1rem 0;
+}
+
+.section_post_content h3 {
+  margin: 2rem 0 1rem 0;
 }
 
 .post_content {
@@ -226,6 +236,11 @@ button:hover {
 
 /* 2.2 CSS des éléments visuels de l'éditeur */
 
+.kg-card {
+  margin: 5em 0 5em 0;
+}
+
+
 .kg-width-wide {
   position: relative;
   width: 85vw;
@@ -233,8 +248,6 @@ button:hover {
   margin: 5em calc(50% - 50vw);
   transform: translateX(calc(50vw - 50%));
 }
-
-
 
 .kg-width-full {
   position: relative;
