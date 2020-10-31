@@ -172,11 +172,11 @@ button:hover {
 }
 
 .section_post_content h2 {
-  margin: 5rem 0 0 0;
+  margin: 5rem 0 0.5rem 0;
 }
 
 .section_post_content h3 {
-  margin: 2rem 0 0 0;
+  margin: 2rem 0 0.5rem 0;
 }
 
 .post_content {
