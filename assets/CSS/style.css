@@ -527,6 +527,121 @@ nav {
 
 /* 4 Archive-home */
 
+
+/* 4 bis archive temporaire meublage */
+
+.div-logos-clients {
+  width: 100vw;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.logos-client {
+  width: 20%;
+  height: auto;
+}
+
+.div-catch-phrase {
+  width: 100vw;
+  height: 50vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.catch-phrase {
+  width: 50%;
+}
+
+@media (max-width: 500px) {
+  .div-logos-clients {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .logos-client {
+    width: 60%
+  }
+
+  .catch-phrase {
+    width: 80%;
+  }
+}
+
+.section-study-case {
+ width: 100vw;
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+ margin-top: 100px;
+ margin-bottom: 100px;
+ background-color: #151515;
+ padding-top: 30px;
+ padding-bottom: 30px;
+}
+
+.div-study-case {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+
+.img-study-case {
+  width: 50%;
+  height: auto;
+}
+
+@media (max-width: 500px) {
+  .div-study-case {
+    flex-direction: column;
+  }
+  .img-study-case {
+    width: 80%;
+  }
+}
+
+
+.text-study-case {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.h3-study-case {
+  color: white;
+}
+
+.button-study-case {
+  background-color: #303030;
+}
+
+.h2-projets {
+  color: white;
+}
+
+.encart-meublage {
+  position: fixed;
+  top: 0%;
+  right: 0%;
+  width: 100px;
+  height: 100px;
+  background-color: var(--black-contrast-darkmode);
+  color: var(--violet);
+  z-index: 1000;
+  text-align: center;
+}
+
 /* 4.1 Archive hero */
 
 .hero-archive-container {
