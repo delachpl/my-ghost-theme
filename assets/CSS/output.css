@@ -414,7 +414,8 @@ nav {
 @media (max-width: 1150px) {
   .hero-post-section {
     width: 70%;
-    height: auto; }
+    height: auto;
+    margin-bottom: 200px; }
     .hero-post-section h1 {
       font-size: 1.6rem; }
 
