@@ -1,23 +1,11 @@
-<article class="archive-layout {{post_class}}">
-            <div class="article-card">
+<article class="article-card" {{post_class}}>
 
-                <div class="article-img" style="background-image: url({{img_url feature_image}});"></div>
-                
+    <div class="article-img" style="background-image: url({{img_url feature_image}});"></div>
 
-                <div class="meta-data-article">
-                    <a href="{{url}}">
-                        <h2>{{title}}</h2>
-                    </a>
-                    <div class="post-excerpt">
-                        <p>{{excerpt characters="20"}}</p>
-                    </div>
-                    
-                    <div>
-                        <a href="{{url}}"><button>En savoir plus</button></a>
-                    </div>
+    <div class="meta-data-article">
+        
+        <a href="{{url}}"><h3>{{title}}</h3></a>
+        <p>{{excerpt characters="20"}}</p>
 
-                </div>
-            </div>
-                
-
+    </div>
 </article>

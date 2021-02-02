@@ -1,0 +1,33 @@
+{{!< default}}
+
+{{#tag}}
+
+    <header class="tag-hero-section">
+        <div class="tag-hero-container">
+                <div class="tag-text-hero-archive">
+                    <h1>{{name}}</h1>
+                    <p>{{description}}</p>
+                
+                </div>
+
+                <div class="hero-index-img" style="background-image: url('{{feature_image}}')">      
+        </div>
+
+
+    </header>
+
+    <main class="tag-archive-layout">
+        <div class="tag-archive-container">
+        {{#get "posts" filter="tags:{{slug}}"}}
+            {{#foreach posts}}
+                {{> 'post-card'}}
+            {{/foreach}}
+         {{/get}}
+
+        </div>
+
+
+
+    </main>
+
+{{/tag}}

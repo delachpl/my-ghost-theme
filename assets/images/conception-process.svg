@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="410" height="824" viewBox="0 0 410 824">
+  <g id="Groupe_119" data-name="Groupe 119" transform="translate(-15115 14553)">
+    <rect id="Rectangle_81" data-name="Rectangle 81" width="410" height="824" transform="translate(15115 -14553)" fill="#383838"/>
+    <g id="Groupe_117" data-name="Groupe 117" transform="translate(872 -508)">
+      <g id="Groupe_93" data-name="Groupe 93" transform="translate(-126 218)">
+        <g id="Rectangle_64" data-name="Rectangle 64" transform="translate(14438 -13554)" fill="#151515" stroke="#707070" stroke-width="1">
+          <rect width="146" height="53" stroke="none"/>
+          <rect x="0.5" y="0.5" width="145" height="52" fill="none"/>
+        </g>
+      </g>
+      <rect id="Rectangle_78" data-name="Rectangle 78" width="251" height="54" rx="27" transform="translate(14300 -13505)" fill="#151515"/>
+      <rect id="Rectangle_80" data-name="Rectangle 80" width="158" height="54" rx="27" transform="translate(14300 -13426)" fill="#848484"/>
+      <g id="Groupe_115" data-name="Groupe 115">
+        <g id="Groupe_92" data-name="Groupe 92" transform="translate(3448.188 -857.812)">
+          <rect id="Rectangle_62" data-name="Rectangle 62" width="296" height="296" transform="translate(10851.812 -13005.188)" fill="#151515"/>
+        </g>
+        <g id="Groupe_114" data-name="Groupe 114">
+          <line id="Ligne_7" data-name="Ligne 7" y1="296" x2="296" transform="translate(14300.5 -13862.5)" fill="none" stroke="#fff" stroke-width="1"/>
+          <line id="Ligne_8" data-name="Ligne 8" x1="296" y1="296" transform="translate(14300.5 -13862.5)" fill="none" stroke="#fff" stroke-width="1"/>
+        </g>
+      </g>
+      <g id="Groupe_116" data-name="Groupe 116" transform="translate(233.951 -107.361)">
+        <g id="Groupe_92-2" data-name="Groupe 92" transform="translate(14300.361 -13862.639)">
+          <rect id="Rectangle_62-2" data-name="Rectangle 62" width="63" height="29" transform="translate(-0.313)" fill="#151515"/>
+        </g>
+        <g id="Groupe_114-2" data-name="Groupe 114" transform="translate(14300.049 -13862.951)">
+          <line id="Ligne_7-2" data-name="Ligne 7" y1="29.173" x2="62.548" transform="translate(0 0)" fill="none" stroke="#fff" stroke-width="1"/>
+          <line id="Ligne_8-2" data-name="Ligne 8" x1="62.548" y1="29.173" transform="translate(0 0)" fill="none" stroke="#fff" stroke-width="1"/>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>
