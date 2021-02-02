@@ -1,615 +1,78 @@
-@charset "UTF-8";
-:root {
-  font-size: 21px; }
-
-html, body {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  vertical-align: baseline;
-  font-family: "Source Serif Pro", serif, "Open Sans", sans-serif;
-  color: #151515;
-  position: relative;
-  background-color: #fcfcfc;
-  overflow-x: hidden; }
-
-section, main, header {
-  margin-bottom: 200px; }
-
-a {
-  color: #44d5ab;
-  text-decoration: none; }
-
-a:hover {
-  opacity: 50%;
-  cursor: pointer; }
-
-p {
-  font-family: "Open Sans", sans-serif;
-  font-size: 1rem;
-  line-height: 1.7; }
-
-@media (max-width: 500px) {
-  p {
-    font-size: 0.9rem; } }
-ul {
-  margin: 0 0 1rem 0; }
-
-li {
-  margin-bottom: 1.2em;
-  line-height: 2; }
-
-h1, h2, h3 {
-  font-family: "Source Serif Pro", serif;
-  margin-top: 0;
-  margin: 1rem 0 1rem 0;
-  line-height: 1.25;
-  font-weight: 700;
-  text-align: left;
-  color: #151515; }
-
-h1 {
-  font-size: 2.8rem; }
-
-h2 {
-  font-size: 3.8rem; }
-
-h3 {
-  font-size: 1.7rem; }
-
-img {
-  width: auto;
-  min-height: 100%; }
-
-button {
-  background-color: #151515;
-  font-family: "Source Serif Pro", serif;
-  color: #fcfcfc;
-  font-size: 1rem;
-  border-radius: 10px;
-  border: none;
-  padding: 1.2rem; }
-  button :hover {
-    cursor: pointer; }
-
-@media (max-width: 1150px) {
-  h1 {
-    font-size: 1.7rem; }
-
-  h2 {
-    font-size: 1.7rem; }
-
-  h3 {
-    font-size: 1.4rem; } }
-nav {
-  width: 100vw;
-  height: 10vh;
-  display: flex;
-  align-items: center;
-  justify-content: space-around; }
-
-.nav-left-container {
-  width: 40%; }
-
-.nav-right-container {
-  width: 40%;
-  display: flex;
-  justify-content: flex-end; }
-  .nav-right-container a {
-    color: #151515;
-    text-transform: uppercase;
-    letter-spacing: 0.2rem;
-    font-weight: 600;
-    font-size: 0.8rem; }
-
-.nav-logo-link {
-  width: 40%; }
-
-@media (max-width: 800px) {
-  .nav-logo-link {
-    width: 60%; } }
-@media (max-width: 500px) {
-  .nav-left-container {
-    width: 50%; }
-
-  .nav-logo-link {
-    width: 100%;
-    padding-top: 10px; } }
-.social-list {
-  display: flex;
-  flex-direction: row !important; }
-
-.footer-container {
-  width: 100vw;
-  height: 40vh;
-  background-color: #151515;
-  display: flex; }
-  .footer-container div {
-    display: flex;
-    flex-direction: column;
-    margin: auto 50px auto 50px; }
-    .footer-container div svg {
-      width: 200px; }
-  .footer-container p {
-    color: #fcfcfc;
-    font-family: "Source Serif Pro", serif;
-    text-transform: uppercase;
-    letter-spacing: 0.1rem;
-    font-weight: 700; }
-  .footer-container a {
-    color: #fcfcfc;
-    font-family: "Open Sans", sans-serif;
-    font-size: 0.8rem;
-    margin-bottom: 1.2rem;
-    font-weight: 300; }
-
-@media (max-width: 800px) {
-  .footer-container {
-    height: auto;
-    flex-direction: column-reverse; } }
-.hero-archive-section {
-  width: 100vw;
-  height: 80vh;
-  display: flex;
-  align-items: center;
-  justify-content: center; }
-
-.hero-container {
-  width: 80%;
-  height: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: space-around; }
-
-.hero-index-img {
-  width: 40%;
-  background-size: cover;
-  background-position: center;
-  height: 90%; }
-
-.text-hero-archive {
-  width: 50%;
-  display: flex;
-  flex-direction: column; }
-  .text-hero-archive h1 {
-    font-size: 3.8rem; }
-  .text-hero-archive p {
-    font-size: 1.4rem; }
-
-@media (max-width: 1150px) {
-  .text-hero-archive h1 {
-    font-size: 2.5rem; }
-  .text-hero-archive p {
-    font-size: 1rem; } }
-@media (max-width: 800px) {
-  .hero-archive-section {
-    height: auto; }
-
-  .hero-container {
-    width: 90%;
-    flex-direction: column; }
-
-  .hero-index-img {
-    margin-top: 100px;
-    width: 100%;
-    height: 80vh; }
-
-  .text-hero-archive {
-    width: 90%; }
-    .text-hero-archive p {
-      margin-top: 0px; } }
-.index-layout {
-  display: flex;
-  flex-direction: column;
-  align-items: center; }
-
-.index-title {
-  width: 80%;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  margin-bottom: 100px; }
-  .index-title h2 {
-    width: 40%; }
-  .index-title p {
-    width: 40%;
-    font-size: 1.4rem; }
-
-.article-layout {
-  width: 60vw;
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: repeat(auto, 1fr);
-  row-gap: 10vh; }
-
-.article-layout :nth-child(2n+1) {
-  grid-area: 1 / 1 / auto / auto; }
-
-.article-layout :nth-child(2n) {
-  grid-area: 2 / 2 / auto / auto;
-  justify-self: end; }
-  .article-layout :nth-child(2n) div {
-    right: 50%;
-    left: -50%; }
-
-.img-tag {
-  width: 422px;
-  height: 634px;
-  position: relative;
-  background-position: center;
-  background-size: contain;
-  background-repeat: no-repeat; }
-  .img-tag div {
-    background-color: #fcfcfc;
-    position: absolute;
-    padding: 1.3rem;
-    right: -50%;
-    left: 50%;
-    top: 30%; }
-
-@media (max-width: 1150px) {
-  .index-title h2 {
-    font-size: 2.5rem; }
-  .index-title p {
-    font-size: 1.2rem; }
-
-  .article-layout {
-    width: 70vw; }
-
-  .img-tag:nth-child(2n) {
-    justify-self: auto; } }
-@media (max-width: 850px) {
-  .index-title {
-    width: 90%;
-    flex-direction: column; }
-    .index-title h2 {
-      width: 100%; }
-    .index-title p {
-      font-size: 1rem;
-      width: 100%; }
-
-  .article-layout {
-    width: 90vw;
-    grid-template-columns: repeat(1, 1fr);
-    row-gap: 20vh; }
-
-  .img-tag {
-    width: 100%;
-    display: flex;
-    justify-content: center; }
-    .img-tag div {
-      width: 80%;
-      position: static;
-      align-self: flex-end;
-      margin-bottom: -100px; }
-
-  .img-tag:nth-child(2n) {
-    grid-area: auto / auto / auto / auto; } }
-.tag-hero-section {
-  width: 100vw;
-  height: 100vh;
-  display: flex;
-  align-items: center;
-  justify-content: center; }
-  .tag-hero-section img {
-    width: 40%; }
-
-.tag-hero-container {
-  width: 80%;
-  height: 80%;
-  display: flex;
-  align-items: center;
-  justify-content: space-around; }
-
-.tag-text-hero-archive {
-  width: 50%;
-  display: flex;
-  flex-direction: column; }
-  .tag-text-hero-archive p {
-    font-size: 1.4rem; }
-
-.tag-archive-layout {
-  width: 100vw;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center; }
-
-.tag-archive-container {
-  width: 90%;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(auto, 1fr);
-  column-gap: 200px;
-  row-gap: 100px; }
-
-.article-card {
-  display: flex;
-  flex-direction: column;
-  align-items: center; }
-  .article-card h3 {
-    font-size: 1.2rem; }
-
-.article-img {
-  width: 100%;
-  height: 200px;
-  background-position: center;
-  background-size: cover; }
-
-@media (max-width: 1150px) {
-  .tag-archive-container {
-    grid-template-columns: repeat(2, 1fr); } }
-@media (max-width: 850px) {
-  .tag-text-hero-archive {
-    width: 90%; }
-    .tag-text-hero-archive p {
-      margin-top: 0px;
-      font-size: 1rem; }
-
-  .tag-hero-section {
-    height: auto;
-    width: 100vw; }
-
-  .tag-hero-container {
-    flex-direction: column-reverse;
-    width: 100%; }
-    .tag-hero-container .hero-index-img {
-      width: 90%;
-      height: 400px; }
-
-  .tag-archive-container {
-    grid-template-columns: repeat(2, 1fr); } }
-@media (max-width: 550px) {
-  .tag-archive-container {
-    grid-template-columns: repeat(1, 1fr); } }
-.post-layout {
-  display: flex;
-  flex-direction: column;
-  align-items: center; }
-
-.hero-post-section {
-  width: 100vw;
-  height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  margin-bottom: 0px; }
-
-.content-hero-grid {
-  width: 80%;
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  column-gap: 100px;
-  align-items: center;
-  justify-content: center; }
-
-.hero-text-post {
-  width: 100%; }
-
-.feature-post-img {
-  width: 100%;
-  height: 500px;
-  background-position: center;
-  background-size: cover;
-  border-radius: 10px; }
-
-.post_tag_container {
-  display: flex;
-  justify-content: space-between; }
-
-@media (max-width: 1150px) {
-  .hero-post-section {
-    width: 70%;
-    height: auto; }
-    .hero-post-section h1 {
-      font-size: 1.6rem; }
-
-  .content-hero-grid {
-    width: 100%;
-    grid-template-columns: repeat(1, 1fr);
-    column-gap: 0px;
-    row-gap: 50px; }
-
-  .feature-post-img {
-    height: 40vh; }
-
-  .post_tag_container {
-    display: flex;
-    flex-direction: column; } }
-@media (max-width: 800px) {
-  .hero-post-section {
-    width: 90%;
-    height: auto; } }
-.section-post-content {
-  width: 100vw;
-  display: flex;
-  flex-direction: column;
-  align-items: center; }
-
-.post-content {
-  width: 45%; }
-  .post-content h2 {
-    font-size: 1.4rem;
-    margin-bottom: auto;
-    margin-top: 5rem; }
-  .post-content h3 {
-    font-size: 1.2rem;
-    margin-bottom: auto;
-    margin-top: 3rem; }
-  .post-content p {
-    line-height: 2; }
-  .post-content blockquote {
-    background-image: url("content/themes/my-ghost-theme/assets/images/left-quotes-sign.png");
-    font-size: 1.5rem;
-    line-height: 2;
-    color: #44d5ab;
-    text-align: center;
-    border: 0px;
-    padding-left: 0px; }
-
-@media (max-width: 1150px) {
-  .post-content {
-    width: 70%; } }
-@media (max-width: 800px) {
-  .post-content {
-    width: 90%; }
-    .post-content h2 {
-      font-size: 1.2rem; }
-    .post-content h3 {
-      font-size: 1rem; }
-    .post-content blockquote {
-      font-size: 1.2rem; } }
-.kg-card {
-  margin: 2.5em 0 2.5em 0; }
-
-.kg-width-wide {
-  position: relative;
-  width: 85vw;
-  min-width: 100%;
-  margin: 5em calc(50% - 50vw);
-  transform: translateX(calc(50vw - 50%)); }
-
-.kg-width-full {
-  position: relative;
-  width: 100vw;
-  left: 50%;
-  right: 50%;
-  margin: 5em -50vw; }
-
-.kg-image {
-  width: 100%; }
-
-@media (max-width: 1024px) {
-  .kg-width-wide {
-    width: 100vw;
-    margin: 3em calc(50% - 50vw); }
-
-  .kg-width-full {
-    width: 100vw;
-    margin: 3em -50vw; } }
-.kg-gallery-container {
-  display: flex;
-  flex-direction: column;
-  margin: 5em auto;
-  max-width: 1040px;
-  width: 100vw; }
-
-.kg-gallery-row {
-  display: flex;
-  flex-direction: row;
-  justify-content: center; }
-
-@media (max-width: 800px) {
-  .kg-gallery-container {
-    margin: 3em auto; } }
-@media (max-width: 500px) {
-  .kg-gallery-row {
-    flex-direction: column; } }
-.kg-gallery-image img {
-  display: block;
-  margin: 0;
-  width: 100%;
-  height: 100%; }
-
-.kg-gallery-row:not(:first-of-type) {
-  margin: 0.75em 0 0 0; }
-
-.kg-gallery-image:not(:first-of-type) {
-  margin: 0 0 0 0.75em; }
-
-@media (max-width: 500px) {
-  .kg-gallery-image img {
-    margin: 1em 0 1em 0; }
-
-  .kg-gallery-row:not(:first-of-type) {
-    margin: 0; }
-
-  .kg-gallery-image:not(:first-of-type) {
-    margin: 0; } }
-.kg-bookmark-card {
-  width: 100%;
-  position: relative; }
-
-@media (max-width: 500px) {
-  .kg-bookmark-card {
-    width: 80%; } }
-.kg-bookmark-container {
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: row-reverse;
-  color: currentColor;
-  font-family: inherit;
-  text-decoration: none;
-  border: 1px solid rgba(0, 0, 0, 0.1); }
-
-.kg-bookmark-container:hover {
-  text-decoration: none; }
-
-.kg-bookmark-content {
-  flex-basis: 0;
-  flex-grow: 999;
-  padding: 20px;
-  order: 1; }
-
-.kg-bookmark-title {
-  font-weight: 600; }
-
-.kg-bookmark-metadata,
-.kg-bookmark-description {
-  margin-top: .5em; }
-
-.kg-bookmark-metadata {
-  align-items: center;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis; }
-
-.kg-bookmark-description {
-  display: -webkit-box;
-  -webkit-box-orient: vertical;
-  -webkit-line-clamp: 2;
-  overflow: hidden; }
-
-.kg-bookmark-icon {
-  display: inline-block;
-  width: 1em;
-  height: 1em;
-  vertical-align: text-bottom;
-  margin-right: .5em;
-  margin-bottom: .05em; }
-
-.kg-bookmark-thumbnail {
-  display: flex;
-  flex-basis: 24rem;
-  flex-grow: 1; }
-
-.kg-bookmark-thumbnail img {
-  max-width: 100%;
-  height: auto;
-  vertical-align: bottom;
-  object-fit: cover; }
-
-.kg-bookmark-author {
-  white-space: nowrap;
-  text-overflow: ellipsis;
-  overflow: hidden; }
-
-.kg-bookmark-publisher::before {
-  content: "•";
-  margin: 0 .5em; }
-
-blockquote {
-  font-size: 2rem;
-  font-family: var(--font-family-serif);
-  font-style: italic;
-  font-weight: bold;
-  color: var(--noir-grisé);
-  line-height: 1.5;
-  border-left-style: solid;
-  border: 0 0 0 3px;
-  border-color: var(--noir-grisé);
-  padding-left: 2rem;
-  margin: 4rem auto; }
-
-/*# sourceMappingURL=output.css.map */
+/*
+Error: Incompatible units: '' and 'n'.
+        on line 318 of assets/sass/input.scss
+
+313:     row-gap: 10vh;
+314:     
+315: }
+316: 
+317: .article-layout :nth-child(2n+1) {
+318:     grid-area: 2n+1 / 2n+1 / auto / auto;
+319: }
+320: 
+321: .article-layout :nth-child(2n) {
+322:     grid-area: 2n / 2n / auto / auto;
+323:     justify-self: end;
+
+Backtrace:
+assets/sass/input.scss:318
+/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/script/value/number.rb:450:in `coercion_factor'
+/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/script/value/number.rb:371:in `coerce'
+/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/script/value/number.rb:431:in `operate'
+/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/script/value/number.rb:97:in `plus'
+/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/script/tree/operation.rb:85:in `_perform'
+/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/script/tree/node.rb:50:in `perform'
+/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/script/tree/operation.rb:67:in `_perform'
+/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/script/tree/node.rb:50:in `perform'
+/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:398:in `visit_prop'
+/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/tree/visitors/base.rb:36:in `visit'
+/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:158:in `block in visit'
+/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/stack.rb:79:in `block in with_base'
+/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/stack.rb:135:in `with_frame'
+/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/stack.rb:79:in `with_base'
+/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:158:in `visit'
+/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:440:in `block (2 levels) in visit_rule'
+/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:440:in `map'
+/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:440:in `block in visit_rule'
+/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:179:in `with_environment'
+/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:438:in `visit_rule'
+/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/tree/visitors/base.rb:36:in `visit'
+/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:158:in `block in visit'
+/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/stack.rb:79:in `block in with_base'
+/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/stack.rb:135:in `with_frame'
+/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/stack.rb:79:in `with_base'
+/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:158:in `visit'
+/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/tree/visitors/base.rb:52:in `block in visit_children'
+/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/tree/visitors/base.rb:52:in `map'
+/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/tree/visitors/base.rb:52:in `visit_children'
+/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:167:in `block in visit_children'
+/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:179:in `with_environment'
+/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:166:in `visit_children'
+/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/tree/visitors/base.rb:36:in `block in visit'
+/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:186:in `visit_root'
+/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/tree/visitors/base.rb:36:in `visit'
+/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:157:in `visit'
+/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:10:in `visit'
+/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/tree/root_node.rb:36:in `css_tree'
+/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/tree/root_node.rb:29:in `render_with_sourcemap'
+/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/engine.rb:389:in `_render_with_sourcemap'
+/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/engine.rb:307:in `render_with_sourcemap'
+/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/plugin/compiler.rb:462:in `update_stylesheet'
+/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/plugin/compiler.rb:215:in `block in update_stylesheets'
+/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/plugin/compiler.rb:209:in `each'
+/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/plugin/compiler.rb:209:in `update_stylesheets'
+/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/plugin/compiler.rb:443:in `on_file_changed'
+/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/plugin/compiler.rb:320:in `block in watch'
+/Library/Ruby/Gems/2.6.0/gems/sass-listen-4.0.0/lib/sass-listen/event/config.rb:23:in `call'
+/Library/Ruby/Gems/2.6.0/gems/sass-listen-4.0.0/lib/sass-listen/event/processor.rb:115:in `_process_changes'
+/Library/Ruby/Gems/2.6.0/gems/sass-listen-4.0.0/lib/sass-listen/event/processor.rb:19:in `block in loop_for'
+/Library/Ruby/Gems/2.6.0/gems/sass-listen-4.0.0/lib/sass-listen/event/processor.rb:15:in `loop'
+/Library/Ruby/Gems/2.6.0/gems/sass-listen-4.0.0/lib/sass-listen/event/processor.rb:15:in `loop_for'
+/Library/Ruby/Gems/2.6.0/gems/sass-listen-4.0.0/lib/sass-listen/event/loop.rb:84:in `_wait_for_changes'
+/Library/Ruby/Gems/2.6.0/gems/sass-listen-4.0.0/lib/sass-listen/event/loop.rb:42:in `block in setup'
+/Library/Ruby/Gems/2.6.0/gems/sass-listen-4.0.0/lib/sass-listen/internals/thread_pool.rb:6:in `block in add'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Error: Incompatible units: '' and 'n'.\A         on line 318 of assets/sass/input.scss\A \A 313:     row-gap: 10vh;\A 314:     \A 315: }\A 316: \A 317: .article-layout :nth-child(2n+1) {\A 318:     grid-area: 2n+1 / 2n+1 / auto / auto;\A 319: }\A 320: \A 321: .article-layout :nth-child(2n) {\A 322:     grid-area: 2n / 2n / auto / auto;\A 323:     justify-self: end;"; }
