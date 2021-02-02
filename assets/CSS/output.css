@@ -221,6 +221,9 @@ nav {
   grid-template-columns: repeat(2, 1fr);
   row-gap: 10vh; }
 
+.img-tag:nth-child(n) {
+  grid-area: 1 / 1 / auto / auto; }
+
 .img-tag:nth-child(2n) {
   grid-area: 2 / 2 / auto / auto;
   justify-self: end; }
