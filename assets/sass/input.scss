@@ -311,6 +311,7 @@ nav {
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(auto, 1fr);
     row-gap: 10vh;
+    justify-content: center;
     
 }
 
@@ -318,7 +319,7 @@ nav {
     grid-area: 1 / 1 / auto / auto;
 }
 .article-layout :nth-child(3) {
-    grid-area: 4 / 4 / auto / auto;
+    grid-area: 3 / 1 / auto / auto;
 }
 
 .article-layout :nth-child(2) {
@@ -332,7 +333,7 @@ nav {
 }
 
 .article-layout :nth-child(4) {
-    grid-area: 4 / 4 / auto / auto;
+    grid-area: 4 / 2 / auto / auto;
     justify-self: end;
 
     div {
