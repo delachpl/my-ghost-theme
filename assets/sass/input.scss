@@ -313,11 +313,11 @@ nav {
     
 }
 
-.img-tag:nth-child(n) {
+.img-tag:nth-child(odd) {
     grid-area: 1 / 1 / auto / auto;
 }
 
-.img-tag:nth-child(2n) {
+.img-tag:nth-child(even) {
     grid-area: 2 / 2 / auto / auto;
     justify-self: end;
 

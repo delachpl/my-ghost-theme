@@ -221,13 +221,13 @@ nav {
   grid-template-columns: repeat(2, 1fr);
   row-gap: 10vh; }
 
-.img-tag:nth-child(n) {
+.img-tag:nth-child(odd) {
   grid-area: 1 / 1 / auto / auto; }
 
-.img-tag:nth-child(2n) {
+.img-tag:nth-child(even) {
   grid-area: 2 / 2 / auto / auto;
   justify-self: end; }
-  .img-tag:nth-child(2n) div {
+  .img-tag:nth-child(even) div {
     right: 50%;
     left: -50%; }
 
