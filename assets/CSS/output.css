@@ -219,15 +219,16 @@ nav {
   width: 60vw;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(auto, 1fr);
   row-gap: 10vh; }
 
-.img-tag:nth-child(odd) {
+.img-tag:nth-child(2n+1) {
   grid-area: 1 / 1 / auto / auto; }
 
-.img-tag:nth-child(even) {
+.img-tag:nth-child(2n) {
   grid-area: 2 / 2 / auto / auto;
   justify-self: end; }
-  .img-tag:nth-child(even) div {
+  .img-tag:nth-child(2n) div {
     right: 50%;
     left: -50%; }
 
