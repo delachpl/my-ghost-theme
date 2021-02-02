@@ -314,19 +314,31 @@ nav {
     
 }
 
-.article-layout :nth-child(2n+1) {
-    grid-area: 2n+1 / 2n+1 / auto / auto;
+.article-layout :nth-child(1) {
+    grid-area: 1 / 1 / auto / auto;
+}
+.article-layout :nth-child(3) {
+    grid-area: 4 / 4 / auto / auto;
 }
 
-.article-layout :nth-child(2n) {
-    grid-area: 2n / 2n / auto / auto;
+.article-layout :nth-child(2) {
+    grid-area: 2 / 2 / auto / auto;
     justify-self: end;
 
     div {
         right: 50%;
         left: -50%;
     }
-    
+}
+
+.article-layout :nth-child(4) {
+    grid-area: 4 / 4 / auto / auto;
+    justify-self: end;
+
+    div {
+        right: 50%;
+        left: -50%;
+    }
 }
 
 .img-tag {
