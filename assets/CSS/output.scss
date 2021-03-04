@@ -505,13 +505,7 @@ nav {
 
 @media (max-width: 1150px) {
   .toc-container {
-    width: 45%;
-    align-self: center;
-    position: static;
-    font-size: 1em; } }
-@media (max-width: 750px) {
-  .toc-container {
-    width: 80%; } }
+    display: none; } }
 .kg-card {
   margin: 2.5em 0 2.5em 0; }
 
