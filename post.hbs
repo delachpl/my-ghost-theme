@@ -35,12 +35,28 @@
             <div class="post-content">
                 
                 {{content}}
-
+                <div class="divider-bottom-post"></div>
             </div>
+            
             
         </section>
     
     </article>
+    <section class="tag-archive-layout">
+        
+        <h2 class="h2-post-loin">Pour aller plus loin</h2>
+        <div class="tag-archive-container">
+        {{#get "posts" filter="tags:{{primary_tag.slug}}+id:-{{id}}"}}
+            {{#foreach posts}}
+                {{> 'post-card'}}
+            {{/foreach}}
+         {{/get}}
+
+        </div>
+
+
+
+    </section>
 </main>
 
 {{/post}}

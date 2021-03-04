@@ -474,6 +474,11 @@ nav {
       font-size: 1rem; }
     .post-content blockquote {
       font-size: 1.2rem; } }
+.divider-bottom-post {
+  width: 100%;
+  height: 1.5px;
+  background-color: #151515; }
+
 .kg-card {
   margin: 2.5em 0 2.5em 0; }
 
@@ -625,5 +630,54 @@ blockquote {
   border-color: var(--noir-grisé);
   padding-left: 2rem;
   margin: 4rem auto; }
+
+.h2-post-loin {
+  margin-bottom: 2em; }
+
+.newsletter-section {
+  width: 100vw;
+  height: 10vh;
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+
+#revue-embed {
+  width: 500px;
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; }
+  #revue-embed h3 {
+    text-align: center;
+    margin-bottom: 0px; }
+  #revue-embed p {
+    text-align: center; }
+
+.revue-form-group {
+  display: flex;
+  justify-content: center; }
+  .revue-form-group #member_submit {
+    background-color: #151515;
+    font-family: "Source Serif Pro", serif;
+    color: #fcfcfc;
+    font-size: 1rem;
+    border-radius: 0px 10px 10px 0px;
+    border: none;
+    padding: .8rem; }
+    .revue-form-group #member_submit :hover {
+      cursor: pointer; }
+
+.revue-form-field {
+  width: 100%;
+  height: 30px;
+  padding: .8rem;
+  font-size: .8rem;
+  border: 0.8px solid #151515;
+  border-radius: 10px 0px 0px 10px; }
+
+.revue-form-footer {
+  text-align: center;
+  padding-top: 15px; }
 
 /*# sourceMappingURL=output.css.map */
