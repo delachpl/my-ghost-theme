@@ -10,8 +10,7 @@ html, body {
   font-family: "Source Serif Pro", serif, "Open Sans", sans-serif;
   color: #151515;
   position: relative;
-  background-color: #fcfcfc;
-  overflow-x: hidden; }
+  background-color: #fcfcfc; }
 
 section, main, header {
   margin-bottom: 200px; }
@@ -438,8 +437,12 @@ nav {
 .section-post-content {
   width: 100vw;
   display: flex;
-  flex-direction: column;
-  align-items: center; }
+  flex-direction: row;
+  justify-content: center;
+  position: relative; }
+
+.left-post-content-container {
+  width: 25%; }
 
 .post-content {
   width: 45%; }
@@ -463,8 +466,14 @@ nav {
     padding-left: 0px; }
 
 @media (max-width: 1150px) {
+  .section-post-content {
+    flex-direction: column-reverse;
+    align-items: center; }
+
   .post-content {
-    width: 70%; } }
+    width: 70%;
+    position: static;
+    align-items: center; } }
 @media (max-width: 800px) {
   .post-content {
     width: 90%; }
@@ -479,6 +488,27 @@ nav {
   height: 1.5px;
   background-color: #151515; }
 
+.toc-container {
+  width: 25%;
+  position: sticky;
+  position: -webkit-sticky;
+  align-self: flex-start;
+  margin-left: 2em;
+  top: 10%;
+  font-size: 0.8em; }
+
+.is-active-link {
+  color: #44d5ab; }
+
+@media (max-width: 1150px) {
+  .toc-container {
+    width: 45%;
+    align-self: center;
+    position: static;
+    font-size: 1em; } }
+@media (max-width: 750px) {
+  .toc-container {
+    width: 80%; } }
 .kg-card {
   margin: 2.5em 0 2.5em 0; }
 

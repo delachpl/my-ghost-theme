@@ -19,7 +19,6 @@ html, body {
     color: $noir-profond;
     position: relative;
     background-color: $blanc-casse;
-    overflow-x: hidden;
 }
 
 section, main, header {
@@ -550,9 +549,9 @@ nav {
     align-items: center;
     justify-content: center;
     margin-bottom: 0px;
-
-
 }
+
+
 
 .content-hero-grid {
     width: 80%;
@@ -623,8 +622,14 @@ nav {
 .section-post-content {
     width: 100vw;
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    flex-direction: row;
+    justify-content: center;
+    position: relative;
+
+}
+
+.left-post-content-container {
+    width: 25%;
 }
 
 .post-content {
@@ -658,8 +663,15 @@ nav {
 }
 
 @media (max-width: 1150px) {
+    .section-post-content {
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+    
     .post-content {
         width: 70%;
+        position: static;
+        align-items: center;
     }
 }
 
@@ -687,6 +699,37 @@ nav {
     width: 100%;
     height: 1.5px;
     background-color: $noir-profond;
+}
+
+// Table of content
+
+.toc-container {
+    width: 25%;
+    position: sticky;
+    position: -webkit-sticky;
+    align-self: flex-start;
+    margin-left: 2em;
+    top: 10%;
+    font-size: 0.8em;
+}
+
+.is-active-link {
+    color:$vert-contraste;
+}
+
+@media (max-width: 1150px) {
+    .toc-container {
+        width: 45%;
+        align-self: center;
+        position: static;
+        font-size: 1em;
+    }
+}
+
+@media (max-width: 750px) {
+    .toc-container {
+        width: 80%;
+    }
 }
 
 // Début des posts

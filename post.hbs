@@ -32,12 +32,15 @@
         </section>        
         
         <section class="section-post-content">
+
+            <div class="left-post-content-container"></div>
             <div class="post-content">
-                
                 {{content}}
                 <div class="divider-bottom-post"></div>
             </div>
-            
+            <aside class="toc-container">
+                <div class="toc"></div>
+            </aside>
             
         </section>
     
@@ -57,6 +60,16 @@
 
 
     </section>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tocbot/4.10.0/tocbot.min.js"></script>
+    <script>
+        tocbot.init({
+            tocSelector: '.toc',
+            contentSelector: '.post-content',
+            hasInnerContainers: true
+        });
+    </script>
 </main>
 
 {{/post}}
