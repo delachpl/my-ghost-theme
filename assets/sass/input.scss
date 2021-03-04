@@ -623,7 +623,7 @@ nav {
     width: 100vw;
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: space-between;
     position: relative;
 
 }
@@ -704,17 +704,22 @@ nav {
 // Table of content
 
 .toc-container {
-    width: 25%;
+    width: 20%;
     position: sticky;
     position: -webkit-sticky;
     align-self: flex-start;
-    margin-left: 2em;
     top: 10%;
-    font-size: 0.8em;
+    font-size: 0.7em;
+    padding-right: 2em;
 }
 
-.is-active-link {
-    color:$vert-contraste;
+.toc-link::before {
+    display: none!important;
+}
+
+.is-active-link::before {
+    display: none!important;
+
 }
 
 @media (max-width: 1150px) {
@@ -1010,3 +1015,14 @@ nav {
 
 
 // Newsletter block long
+
+
+//test js
+
+.trucmuche {
+    opacity: 0%;
+}
+
+.trucmuchenon {
+    opacity: 100%;
+}
