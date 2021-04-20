@@ -930,9 +930,16 @@ nav {
     margin: 4rem auto;
   }
 
-  .kg-embed-card {
+iframe {
       width: 100%;
+      height: 500px;
   }
+
+@media (max-width: 500px) {
+    iframe {
+        height: 250px;
+    }
+}
 
 
 

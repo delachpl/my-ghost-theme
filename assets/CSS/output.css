@@ -658,6 +658,13 @@ blockquote {
   padding-left: 2rem;
   margin: 4rem auto; }
 
+iframe {
+  width: 100%;
+  height: 500px; }
+
+@media (max-width: 500px) {
+  iframe {
+    height: 250px; } }
 .h2-post-loin {
   margin-bottom: 2em; }
 
