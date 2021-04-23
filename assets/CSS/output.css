@@ -488,6 +488,25 @@ nav {
   height: 1.5px;
   background-color: #151515; }
 
+.page-layout {
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+
+.section-page-content {
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative; }
+
+@media (max-width: 1150px) {
+  .section-post-content {
+    flex-direction: column-reverse;
+    align-items: center; } }
 .toc-container {
   width: 20%;
   position: sticky;

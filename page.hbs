@@ -1,0 +1,39 @@
+{{!< default}}
+
+{{#post}}
+
+    <header class="tag-hero-section">
+        <div class="tag-hero-container">
+                <div class="tag-text-hero-archive">
+                    <h1>{{title}}</h1>
+                    <p>{{excerpt}}</p>
+                </div>
+
+                <div class="hero-index-img" style="background-image: url('{{feature_image}}')">      
+        </div>
+
+    </header>
+
+    <main class="page-layout">
+
+        <section class="section-page-content">
+
+            <div class="post-content">
+                {{content}}
+                <div class="divider-bottom-post"></div>
+            </div>
+        </section>
+
+        <section class="tag-archive-container">
+
+        {{#get "posts" filter="tags:{{primary_tag.slug}}+id:-{{id}}"}}
+            {{#foreach posts}}
+                {{> 'post-card'}}
+            {{/foreach}}
+         {{/get}}
+
+        </section>
+
+    </main>
+
+{{/post}}
