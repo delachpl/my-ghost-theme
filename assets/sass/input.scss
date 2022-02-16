@@ -132,6 +132,10 @@ nav {
 
 }
 
+.nav-item {
+        margin-right: 2em;
+}
+
 .nav-logo-link {
     width: 40%;
 }
@@ -145,6 +149,13 @@ nav {
 
 @media (max-width: 500px) {
 
+    .nav-global {
+        align-items: flex-end;
+        justify-content: space-around;
+        flex-direction: column;
+
+    }
+    
     .nav-left-container {
         width: 50%;
     }
